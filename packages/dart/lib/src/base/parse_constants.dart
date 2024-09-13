@@ -42,16 +42,16 @@ const String keyRelation = 'Relation';
 const String keyFileClassname = 'ParseFile';
 
 // Headers
-const String keyHeaderSessionToken = 'X-Parse-Session-Token';
-const String keyHeaderRevocableSession = 'X-Parse-Revocable-Session';
-const String keyHeaderCloudContext = 'X-Parse-Cloud-Context';
+const String keyHeaderSessionToken = 'Session-Token';
+const String keyHeaderRevocableSession = 'Revocable-Session';
+const String keyHeaderCloudContext = 'Cloud-Context';
 const String keyHeaderUserAgent = 'user-agent';
-const String keyHeaderApplicationId = 'X-Parse-Application-Id';
+const String keyHeaderApplicationId = 'Application-Id';
 const String keyHeaderContentType = 'content-type';
 const String keyHeaderContentTypeJson = 'application/json';
-const String keyHeaderMasterKey = 'X-Parse-Master-Key';
-const String keyHeaderClientKey = 'X-Parse-Client-Key';
-const String keyHeaderInstallationId = 'X-Parse-Installation-Id';
+const String keyHeaderMasterKey = 'Master-Key';
+const String keyHeaderClientKey = 'Client-Key';
+const String keyHeaderInstallationId = 'Installation-Id';
 
 // URL params
 const String keyParamSessionToken = 'sessionToken';

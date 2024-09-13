@@ -162,7 +162,7 @@ class ParseUser extends ParseObject implements ParseCloneable {
   /// that user on Parse
   /// By setting [allowWithoutEmail] to `true`, you can sign up without setting an email
   /// Set [doNotSendInstallationID] to 'true' in order to prevent the SDK from sending the installationID to the Server.
-  /// This option is especially useful if you are running you application on web and you don't have permission to add 'X-Parse-Installation-Id' as an allowed header on your parse-server.
+  /// This option is especially useful if you are running you application on web and you don't have permission to add 'Installation-Id' as an allowed header on your parse-server.
   Future<ParseResponse> signUp(
       {bool allowWithoutEmail = false,
       bool doNotSendInstallationID = false}) async {
@@ -210,7 +210,7 @@ class ParseUser extends ParseObject implements ParseCloneable {
   /// Once a user is created using [Parse.create] and a username and password is
   /// provided, call this method to login.
   /// Set [doNotSendInstallationID] to 'true' in order to prevent the SDK from sending the installationID to the Server.
-  /// This option is especially useful if you are running you application on web and you don't have permission to set 'X-Parse-Installation-Id' as an allowed header on your parse-server.
+  /// This option is especially useful if you are running you application on web and you don't have permission to set 'Installation-Id' as an allowed header on your parse-server.
   Future<ParseResponse> login({bool doNotSendInstallationID = false}) async {
     forgetLocalSession();
 
@@ -241,7 +241,7 @@ class ParseUser extends ParseObject implements ParseCloneable {
 
   /// Logs in a user anonymously
   /// Set [doNotSendInstallationID] to 'true' in order to prevent the SDK from sending the installationID to the Server.
-  /// This option is especially useful if you are running you application on web and you don't have permission to add 'X-Parse-Installation-Id' as an allowed header on your parse-server.
+  /// This option is especially useful if you are running you application on web and you don't have permission to add 'Installation-Id' as an allowed header on your parse-server.
   Future<ParseResponse> loginAnonymous(
       {bool doNotSendInstallationID = false}) async {
     forgetLocalSession();
@@ -274,7 +274,7 @@ class ParseUser extends ParseObject implements ParseCloneable {
 
   /// Logs in a user using a service
   /// Set [doNotSendInstallationID] to 'true' in order to prevent the SDK from sending the installationID to the Server.
-  /// This option is especially useful if you are running you application on web and you don't have permission to add 'X-Parse-Installation-Id' as an allowed header on your parse-server.
+  /// This option is especially useful if you are running you application on web and you don't have permission to add 'Installation-Id' as an allowed header on your parse-server.
   static Future<ParseResponse> loginWith(String provider, Object authData,
       {bool doNotSendInstallationID = false,
       String? username,
@@ -287,7 +287,7 @@ class ParseUser extends ParseObject implements ParseCloneable {
   }
 
   /// Set [doNotSendInstallationID] to 'true' in order to prevent the SDK from sending the installationID to the Server.
-  /// This option is especially useful if you are running you application on web and you don't have permission to add 'X-Parse-Installation-Id' as an allowed header on your parse-server.
+  /// This option is especially useful if you are running you application on web and you don't have permission to add 'Installation-Id' as an allowed header on your parse-server.
   Future<ParseResponse> _loginWith(String provider, Object authData,
       {bool doNotSendInstallationID = false}) async {
     try {
