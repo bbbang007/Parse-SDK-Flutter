@@ -26,6 +26,10 @@ dependencies:
     sdk: flutter
 
   parse_server_sdk: ^6.4.0
+    git:
+      url: https://github.com/bbbang007/Parse-SDK-Flutter
+      ref: master
+      path: packages/dart
   # Uncomment for local testing
   #parse_server_sdk:
   #   path: ../dart
